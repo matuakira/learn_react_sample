@@ -12,7 +12,7 @@ export default function Test01() {
 export function Test02() {
   return (
     <div className="App">
-      <h1>Hello Test02ですyo。</h1>
+      <h1>Hello Test02ですyoわわわ。</h1>
     </div>
   );
 }
