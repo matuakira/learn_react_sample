@@ -19,7 +19,6 @@ const App = () => {
   // 単に<>～</>でも良い。
   // buttonタグの中身について、イベントは単語の区切りを大文字にする（キャメルケース）。
   // {}で括った部分はjavascriptとして認識される。
-
   const onClickButton = () => alert("test");
 
   return (
