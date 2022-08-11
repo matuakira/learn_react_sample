@@ -1,5 +1,5 @@
 import React from "react";
-
+import ColorfulMessage from "./components/ColorfulMessage";
 /*
  コンポーネント化する。
  拡張子がjsでも問題なく動くが、
@@ -17,10 +17,17 @@ const App = () => {
   // 便宜上divで括ってもよいが、無駄な要素がレンダリングされてしまうので、
   // Reactに用意されている<React.Fragment>というタグを使うのが定石。
   // 単に<>～</>でも良い。
+  // buttonタグの中身について、イベントは単語の区切りを大文字にする（キャメルケース）。
+  // {}で括った部分はjavascriptとして認識される。
+
+  const onClickButton = () => alert("test");
+
   return (
     <>
-      <h1>こんにちは</h1>
-      <p>お元気ですか</p>
+      <h1 style={{ color: "red" }}>こんにちは</h1>
+      <ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
+      <ColorfulMessage color="pink">元気です。</ColorfulMessage>
+      <button onClick={onClickButton}>ボタン</button>
     </>
   );
 };
