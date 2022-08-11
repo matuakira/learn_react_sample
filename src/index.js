@@ -1,13 +1,11 @@
 import { StrictMode } from "react";
 import ReactDom from "react-dom";
 
-import Test01 from "./Test01";
-import { Test02 } from "./Test01";
+import App from "./App";
 
 ReactDom.render(
   <StrictMode>
-    <Test01 />
-    <Test02 />
+    <App />
   </StrictMode>,
   document.getElementById("root")
 );
