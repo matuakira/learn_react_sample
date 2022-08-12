@@ -1,5 +1,9 @@
 import React from "react";
 
+/*
+  ColorfulMessageをコンポーネント化する。
+  propsで引数を受け取れるようにする。
+*/
 const ColorfulMessage = (props) => {
   // 毎回propsを書かなくて済むように分割代入
   const { color, children } = props;
